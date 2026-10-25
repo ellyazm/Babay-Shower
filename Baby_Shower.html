@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Peyman and Elham are going to have: a Baby Boy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Pinyon+Script&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#E3F0DA;--page:linear-gradient(180deg,#D9EAFB 0%,#DDF0D3 26%,#FADCE6 50%,#FFF3C2 74%,#E4DDF7 100%);
+  --sky:#CFE3F5;--surface:#FAFDF7;--blue:#5E8F58;--blue-deep:#2F5D3A;--honey:#D9A441;--wood:#3E6B45;
+  --ink:#1F3A28;--muted:#4F6F58;--line:#C3D6BA;--leaf:#8DB36E;--leaf-d:#5C8A47;--env:#BFD7EE;--env2:#D3E4F5;--flap:#A9C8E6;
+  --band:#2F5D3A;--band2:#2F6A86;--band3:#5A4B8A;--band-ink:#EAF6E2;
+  --t1:#FCE3EA;--t2:#DCEBFA;--t3:#FFF4CC;--d1:#F4B6C8;--d2:#A9CBEE;--d3:#F2D56B;
+  --serif:'Cormorant Garamond',Georgia,serif;--script:'Pinyon Script','Snell Roundhand',cursive;--sans:'DM Sans',system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;--bg:#16301F;--page:linear-gradient(180deg,#1F3150 0%,#16301F 28%,#3B2440 52%,#3A3319 74%,#2A2858 100%);
+  --sky:#243B5C;--surface:#223A2B;--blue:#8FCB8A;--blue-deep:#BFE5B5;--honey:#E4B85A;--wood:#4F8A5A;
+  --ink:#E8F4E0;--muted:#B5D1B0;--line:#35603F;--leaf:#5F8F55;--leaf-d:#7FB070;--env:#2D4A6E;--env2:#35557F;--flap:#456A9A;
+  --band:#2C5A39;--band2:#2C5F7A;--band3:#5A4B8A;--band-ink:#EAF6E2;
+  --t1:#4A2A3C;--t2:#243B5C;--t3:#4A4122;--d1:#7A4A66;--d2:#3F6494;--d3:#8C7A2E}}
+:root[data-theme="dark"]{
+  color-scheme:dark;--bg:#16301F;--page:linear-gradient(180deg,#1F3150 0%,#16301F 28%,#3B2440 52%,#3A3319 74%,#2A2858 100%);
+  --sky:#243B5C;--surface:#223A2B;--blue:#8FCB8A;--blue-deep:#BFE5B5;--honey:#E4B85A;--wood:#4F8A5A;
+  --ink:#E8F4E0;--muted:#B5D1B0;--line:#35603F;--leaf:#5F8F55;--leaf-d:#7FB070;--env:#2D4A6E;--env2:#35557F;--flap:#456A9A;
+  --band:#2C5A39;--band2:#2C5F7A;--band3:#5A4B8A;--band-ink:#EAF6E2;
+  --t1:#4A2A3C;--t2:#243B5C;--t3:#4A4122;--d1:#7A4A66;--d2:#3F6494;--d3:#8C7A2E}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+a{color:inherit}
+main,.intro,footer{position:relative;z-index:1}
+#balloons{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#balloons .b{position:absolute;left:0;top:0;opacity:.7;will-change:transform}
+#balloons svg{display:block;animation:sway 5s ease-in-out infinite alternate;transform-origin:50% 0}
+@keyframes sway{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
+#bee{position:fixed;right:10px;top:0;z-index:3;pointer-events:none;will-change:transform}
+.wrap{max-width:980px;margin:0 auto;padding:0 28px}
+section{padding:72px 0;position:relative}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,6vw,2.8rem);color:var(--blue-deep);margin:0 0 12px;line-height:1.1}
+.lead{max-width:52ch;color:var(--muted);margin:0 auto 34px}
+.center{text-align:center}
+
+/* intro envelope */
+.intro{position:relative;overflow:hidden;min-height:100svh;display:grid;place-items:center;text-align:center;padding:40px 20px;background:linear-gradient(var(--sky),var(--bg))}
+.intro .script{font-family:var(--script);font-size:clamp(2.4rem,9vw,3.4rem);color:var(--blue-deep);margin:0}
+.env{position:relative;display:block;width:min(84vw,360px);aspect-ratio:3/2;margin:46px auto 20px;padding:0;border:0;background:none;cursor:pointer;perspective:900px}
+.env>*{position:absolute}
+.env .back{inset:0;background:var(--env);border-radius:8px;box-shadow:0 14px 30px rgba(60,80,110,.18)}
+.env .letter{left:9%;right:9%;top:7%;bottom:7%;background:var(--surface);border-radius:6px;display:grid;place-items:center;font-family:var(--script);font-size:1.7rem;color:var(--blue-deep);transition:transform .9s .35s}
+.env .front{inset:0;background:var(--env2);border-radius:8px;clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%)}
+.env .flap{left:0;right:0;top:0;height:58%;background:var(--flap);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s,opacity .3s .6s;z-index:4}
+.env .seal{left:50%;top:52%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;z-index:5;font-size:1.2rem;transition:opacity .3s}
+.env.open .letter{transform:translateY(-34%)}
+.env.open .flap{transform:rotateX(180deg);opacity:0}
+.env.open .seal{opacity:0}
+.hint{font-family:var(--serif);font-size:1.3rem;color:var(--muted);letter-spacing:.06em}
+
+/* invite */
+.invite{text-align:center}
+.pre{font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+.invite h1{font-family:var(--serif);font-weight:500;font-size:clamp(3.2rem,14vw,6rem);line-height:.92;color:var(--blue-deep);margin:10px 0 22px}
+.honor{margin:0;color:var(--muted);font-size:.95rem;letter-spacing:.12em;text-transform:uppercase}
+.name{font-family:var(--script);font-size:clamp(3rem,12vw,4.6rem);color:var(--blue);margin:0 0 18px;line-height:1.1}
+.when{font-family:var(--serif);font-size:clamp(1.3rem,4.5vw,1.7rem);line-height:1.5;margin:0}
+.sign{display:inline-block;margin-top:0;padding:14px 50px 14px 28px;background:var(--wood);color:#FBF3E6;text-decoration:none;font-family:var(--serif);font-size:1.2rem;letter-spacing:.06em;clip-path:polygon(0 0,90% 0,100% 50%,90% 100%,0 100%);transition:transform .25s}
+.sign:hover{transform:translateX(6px)}
+.tree{position:absolute;left:-18px;top:30px;width:92px;height:auto;opacity:.95;pointer-events:none}
+.tree .hive{transform-origin:28px 150px;animation:sway 4s ease-in-out infinite alternate}
+.invite .wrap{padding:0 64px}
+
+/* cards */
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:120px 120px 24px 24px;padding:44px 26px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.card .dot{width:44px;height:44px;border-radius:50%;background:var(--sky);display:grid;place-items:center;font-family:var(--serif);font-size:1.4rem;color:var(--blue-deep)}
+.card h3{font-family:var(--serif);font-weight:500;font-size:1.6rem;margin:6px 0 0}
+.card p{margin:0;color:var(--muted);font-size:.97rem;flex:1}
+.btn{display:inline-block;margin-top:14px;padding:12px 26px;border-radius:999px;background:var(--blue-deep);color:var(--bg);text-decoration:none;font-weight:500;font-size:.97rem;border:1.5px solid var(--blue-deep);cursor:pointer;font-family:var(--sans);transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--blue-deep)}
+.btn.off{background:transparent;color:var(--muted);border-color:var(--line);pointer-events:none}
+.gifts{background:var(--band);color:var(--band-ink);border-radius:32px;padding:48px 24px;text-align:center}
+.gifts h2{color:var(--band-ink)}
+.gifts .lead{color:#CFE6C4}
+.gform{max-width:420px;margin:0 auto;display:grid;gap:16px;text-align:left}
+.gform label.f,.gform legend{font-weight:500;font-size:.95rem;color:var(--band-ink)}
+.gform legend{padding:0;margin-bottom:8px}
+.gform fieldset{border:0;padding:0;margin:0}
+.gform input[type=text]{width:100%;margin-top:6px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);font:inherit}
+.gform .opts{display:flex;flex-wrap:wrap;gap:10px}
+.gform .opts label{position:relative;cursor:pointer}
+.gform .opts input{position:absolute;opacity:0}
+.gform .opts span{display:block;padding:8px 20px;border-radius:999px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);font-family:var(--serif);font-size:1.3rem}
+.gform .opts input:checked+span{background:var(--honey);border-color:var(--honey);color:#2b2112}
+.gform .opts input:focus-visible+span{outline:3px solid #fff;outline-offset:2px}
+.gform .btn{background:var(--surface);color:var(--blue-deep);border-color:var(--surface);justify-self:center;margin-top:4px}
+.gform .btn:hover{background:transparent;color:var(--band-ink);border-color:var(--band-ink)}
+.gform .hp{position:absolute;left:-9999px}
+#gMsg{margin:0;text-align:center;color:#CFE6C4;min-height:1.4em}
+.amounts{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.amt{min-width:130px;padding:16px 22px;border-radius:22px;background:var(--surface);border:1.5px solid var(--line);text-decoration:none;transition:transform .2s,border-color .2s}
+.amt:hover{transform:translateY(-3px);border-color:var(--blue)}
+.amt b{display:block;font-family:var(--serif);font-weight:500;font-size:1.7rem}
+.amt small{color:var(--muted)}
+.amt.off{pointer-events:none;opacity:.6}
+.books{max-width:560px;margin:0 auto;text-align:center}
+
+footer{text-align:center;padding:30px 0 60px;font-family:var(--script);font-size:2rem;color:var(--blue)}
+
+/* sticker animals */
+.sky{position:absolute;inset:0;pointer-events:none;z-index:-1}
+.sky .deco{position:absolute}
+.deco{filter:drop-shadow(1.2px 0 0 #fff) drop-shadow(-1.2px 0 0 #fff) drop-shadow(0 1.2px 0 #fff) drop-shadow(0 -1.2px 0 #fff)}
+.drift{animation:bob 6s ease-in-out infinite alternate}
+@keyframes bob{to{transform:translateY(-14px)}}
+.tw{animation:tw 2.4s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.35;transform:scale(.8)}to{opacity:1;transform:scale(1.1)}}
+.spin{animation:spin 50s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.flyer{position:absolute;left:0;top:18px;pointer-events:none;will-change:transform}
+.parade{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:30px 20px 0}
+.parade .row{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:14px 18px;position:relative;z-index:1}
+.parade .critter{position:relative}
+.ground{height:20px;margin-top:-12px;background:var(--leaf);opacity:.5;border-radius:20px}
+@media (max-width:560px){.sky .deco{max-width:13vw}.hm{display:none}}
+/* animal friends */
+.critter{position:absolute;z-index:2;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.critter svg{display:block;height:auto;overflow:visible}
+.critter.hop svg{animation:hop .6s}
+@keyframes hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-22px) rotate(-6deg)}70%{transform:translateY(0) rotate(4deg)}}
+.heart{position:absolute;left:50%;top:-8px;color:#E9A5A0;font-size:1.3rem;pointer-events:none;animation:fl 1s forwards}
+@keyframes fl{to{transform:translateY(-44px);opacity:0}}
+.intro .bear{bottom:0;left:max(4%,12px)}
+.intro .bunny{bottom:0;right:max(4%,12px)}
+.critter.inline{position:static;display:block;width:96px;margin:0 auto 12px}
+.signwrap{position:relative;display:inline-block;margin-top:34px}
+.signwrap .bird{right:18px;top:-36px}
+.gifts{position:relative}
+.gifts .hedge{right:24px;top:-44px}
+/* ambient background motion */
+#ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#ambient>*{position:absolute;will-change:transform}
+.cld{left:0;animation:xdrift linear infinite}
+@keyframes xdrift{from{transform:translateX(-160px)}to{transform:translateX(calc(100vw + 160px))}}
+.rise{bottom:-40px;animation:rise linear infinite;line-height:1}
+@keyframes rise{0%{transform:translate(0,0);opacity:0}10%{opacity:.85}90%{opacity:.85}100%{transform:translate(var(--dx,30px),-112vh);opacity:0}}
+.leaf{top:-40px;animation:fall linear infinite}
+@keyframes fall{0%{transform:translate(0,0) rotate(0deg)}100%{transform:translate(var(--dx,60px),112vh) rotate(var(--rot,360deg))}}
+.fly{left:0;top:0;animation:wander ease-in-out infinite alternate}
+@keyframes wander{0%{transform:translate(var(--x0),var(--y0))}33%{transform:translate(var(--x1),var(--y1))}66%{transform:translate(var(--x2),var(--y2))}100%{transform:translate(var(--x3),var(--y3))}}
+.fly .wl,.fly .wr{animation:flap .28s ease-in-out infinite alternate;transform-box:fill-box}
+.fly .wl{transform-origin:right center}.fly .wr{transform-origin:left center}
+@keyframes flap{to{transform:scaleX(.25)}}
+@media (prefers-reduced-motion:reduce){#ambient{display:none}}
+/* color palette: blue, green, pink, yellow, lavender */
+body{background-image:var(--page)}
+.intro{background:none}
+.card:nth-child(3n+1){background:var(--t1)}
+.card:nth-child(3n+1) .dot{background:var(--d1)}
+.card:nth-child(3n+2){background:var(--t2)}
+.card:nth-child(3n+2) .dot{background:var(--d2)}
+.card:nth-child(3n){background:var(--t3)}
+.card:nth-child(3n) .dot{background:var(--d3)}
+.gifts{background:linear-gradient(135deg,var(--band),var(--band2) 55%,var(--band3))}
+footer{color:var(--blue-deep)}
+/* scroll reveals */
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease;transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .pop{opacity:0;transform:scale(.85) translateY(40px);transition:opacity .8s,transform .9s cubic-bezier(.2,1.3,.4,1);transition-delay:var(--d,0s)}
+.js .pop.in{opacity:1;transform:none}
+@media (max-width:560px){.invite .wrap{padding:0 40px}.tree{width:64px;left:-10px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv,.js .pop{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width='0' height='0' style='position:absolute' aria-hidden='true'><defs>
+<symbol id='star' viewBox='0 0 30 30'><path d='M15 3l3.6 8.2 8.9.8-6.7 5.9 2 8.8L15 22l-7.8 4.7 2-8.8L2.5 12l8.9-.8z' fill='#F6D27A' stroke='#F6D27A' stroke-width='2' stroke-linejoin='round'/></symbol>
+<symbol id='cloud' viewBox='0 0 100 60'><g id='clb'><circle cx='30' cy='34' r='18'/><circle cx='52' cy='26' r='22'/><circle cx='74' cy='34' r='17'/><rect x='14' y='32' width='76' height='20' rx='10'/></g><use href='#clb' fill='#DCE6F2' stroke='#DCE6F2' stroke-width='4'/><use href='#clb' fill='#FFFFFF'/><circle cx='42' cy='38' r='2.2' fill='#6B574A'/><circle cx='62' cy='38' r='2.2' fill='#6B574A'/><path d='M48 42q4 4 8 0' stroke='#6B574A' fill='none' stroke-width='1.6' stroke-linecap='round'/><circle cx='36' cy='44' r='4' fill='#F4A9A0' opacity='.6'/><circle cx='68' cy='44' r='4' fill='#F4A9A0' opacity='.6'/></symbol>
+<symbol id='sun' viewBox='0 0 80 80'><circle cx='40' cy='40' r='33' fill='none' stroke='#F6C85F' stroke-width='6' stroke-dasharray='3 9' stroke-linecap='round'/><circle cx='40' cy='40' r='22' fill='#F6C85F'/><circle cx='33' cy='38' r='2' fill='#6B574A'/><circle cx='47' cy='38' r='2' fill='#6B574A'/><path d='M36 43q4 4 8 0' stroke='#6B574A' fill='none' stroke-width='1.5' stroke-linecap='round'/><circle cx='28' cy='44' r='3.5' fill='#F4A9A0' opacity='.6'/><circle cx='52' cy='44' r='3.5' fill='#F4A9A0' opacity='.6'/></symbol>
+<symbol id='hba' viewBox='0 0 80 130'><clipPath id='hbc'><path d='M40 4C12 4 2 38 20 66h40C78 38 68 4 40 4z'/></clipPath><g clip-path='url(#hbc)'><rect width='80' height='70' fill='#C8D6EA'/><rect x='18' width='12' height='70' fill='#9FB4CF'/><rect x='30' width='12' height='70' fill='#FFFFFF'/><rect x='42' width='12' height='70' fill='#F3C9B9'/><rect x='54' width='12' height='70' fill='#F7E3C4'/></g><path d='M22 66l8 36M58 66l-8 36' stroke='#B59878' stroke-width='1.5'/><ellipse cx='34' cy='92' rx='3.5' ry='10' fill='#F3E9DC'/><ellipse cx='46' cy='92' rx='3.5' ry='10' fill='#F3E9DC'/><circle cx='40' cy='100' r='9' fill='#F3E9DC'/><circle cx='36.5' cy='98' r='1.4' fill='#4A3A30'/><circle cx='43.5' cy='98' r='1.4' fill='#4A3A30'/><ellipse cx='40' cy='101' rx='1.6' ry='1.1' fill='#E9A5A0'/><rect x='28' y='103' width='24' height='18' rx='3' fill='#C49A6C'/><path d='M28 110h24' stroke='#A97F52'/></symbol>
+<symbol id='hbb' viewBox='0 0 80 130'><g clip-path='url(#hbc)'><rect width='80' height='70' fill='#F4B6C2'/><g fill='#fff' opacity='.85'><circle cx='26' cy='24' r='2.6'/><circle cx='42' cy='16' r='2.6'/><circle cx='54' cy='32' r='2.6'/><circle cx='34' cy='44' r='2.6'/><circle cx='50' cy='52' r='2.6'/><circle cx='20' cy='52' r='2.2'/></g></g><path d='M22 66l8 36M58 66l-8 36' stroke='#B59878' stroke-width='1.5'/><circle cx='33' cy='93' r='4' fill='#C8A37F'/><circle cx='47' cy='93' r='4' fill='#C8A37F'/><circle cx='40' cy='100' r='9' fill='#C8A37F'/><ellipse cx='40' cy='103' rx='4.2' ry='3' fill='#E8D3B9'/><circle cx='36.5' cy='98' r='1.4' fill='#4A3A30'/><circle cx='43.5' cy='98' r='1.4' fill='#4A3A30'/><ellipse cx='40' cy='102' rx='1.5' ry='1' fill='#4A3A30'/><rect x='28' y='103' width='24' height='18' rx='3' fill='#C49A6C'/><path d='M28 110h24' stroke='#A97F52'/></symbol>
+<symbol id='giraffe' viewBox='0 0 90 150'><path d='M28 112q-16 2-20 18' stroke='#E3A04A' stroke-width='3' fill='none' stroke-linecap='round'/><circle cx='7' cy='132' r='4.5' fill='#C98A3C'/><rect x='30' y='122' width='10' height='26' rx='5' fill='#F4C86A'/><rect x='58' y='122' width='10' height='26' rx='5' fill='#F4C86A'/><rect x='26' y='96' width='46' height='36' rx='18' fill='#F4C86A'/><rect x='38' y='36' width='22' height='70' rx='11' fill='#F4C86A'/><ellipse cx='52' cy='28' rx='26' ry='18' fill='#F4C86A'/><path d='M42 12l-2-9M56 12l2-9' stroke='#B9783A' stroke-width='3' stroke-linecap='round'/><circle cx='40' cy='3' r='3.5' fill='#B9783A'/><circle cx='58' cy='3' r='3.5' fill='#B9783A'/><ellipse cx='28' cy='24' rx='7' ry='3.5' fill='#E3A04A' transform='rotate(-20 28 24)'/><g fill='#E3A04A'><circle cx='46' cy='56' r='5'/><circle cx='52' cy='80' r='6'/><circle cx='38' cy='108' r='6'/><circle cx='60' cy='114' r='5'/><circle cx='44' cy='126' r='4'/></g><circle cx='58' cy='24' r='2.4' fill='#4A3A30'/><circle cx='66' cy='35' r='4' fill='#F4A9A0' opacity='.7'/><circle cx='73' cy='31' r='1.3' fill='#B9783A'/><path d='M60 36q4 3 8 0' stroke='#4A3A30' fill='none' stroke-width='1.3' stroke-linecap='round'/></symbol>
+<symbol id='hippo' viewBox='0 0 120 80'><rect x='24' y='56' width='16' height='22' rx='8' fill='#9B95BC'/><rect x='62' y='56' width='16' height='22' rx='8' fill='#9B95BC'/><ellipse cx='54' cy='46' rx='46' ry='26' fill='#A9A3C8'/><ellipse cx='96' cy='46' rx='22' ry='19' fill='#A9A3C8'/><circle cx='86' cy='26' r='6' fill='#A9A3C8'/><circle cx='104' cy='26' r='6' fill='#A9A3C8'/><circle cx='86' cy='26' r='3' fill='#F4A9A0' opacity='.7'/><circle cx='104' cy='26' r='3' fill='#F4A9A0' opacity='.7'/><circle cx='88' cy='38' r='2.4' fill='#4A3A30'/><circle cx='104' cy='38' r='2.4' fill='#4A3A30'/><circle cx='93' cy='50' r='1.8' fill='#4A3A30'/><circle cx='99' cy='50' r='1.8' fill='#4A3A30'/><circle cx='83' cy='48' r='4' fill='#F4A9A0' opacity='.7'/><circle cx='109' cy='48' r='4' fill='#F4A9A0' opacity='.7'/><path d='M92 56q4 3 8 0' stroke='#4A3A30' fill='none' stroke-width='1.4' stroke-linecap='round'/></symbol>
+<symbol id='croc' viewBox='0 0 130 62'><path d='M22 30l6-10 6 10 6-10 6 10 6-10 6 10 6-10 6 10z' fill='#8FC384'/><path d='M14 36C6 30-2 36 4 46c6 4 12 0 14-4z' fill='#A7D49B'/><rect x='16' y='44' width='10' height='14' rx='5' fill='#8FC384'/><rect x='72' y='44' width='10' height='14' rx='5' fill='#8FC384'/><rect x='10' y='26' width='108' height='26' rx='13' fill='#A7D49B'/><rect x='22' y='44' width='92' height='8' rx='4' fill='#D6EBC0'/><circle cx='96' cy='33' r='4.5' fill='#fff'/><circle cx='97' cy='33' r='2.2' fill='#4A3A30'/><circle cx='104' cy='43' r='3.8' fill='#F4A9A0' opacity='.7'/><path d='M110 40q4 3 8 0' stroke='#4A3A30' fill='none' stroke-width='1.3' stroke-linecap='round'/><circle cx='113' cy='32' r='1.2' fill='#4A3A30'/><circle cx='58' cy='18' r='8' fill='#F6C85F'/><path d='M66 17l6 2-6 2z' fill='#E9A25A'/><circle cx='61' cy='16' r='1.6' fill='#4A3A30'/></symbol>
+<symbol id='lion' viewBox='0 0 90 100'><path d='M66 86q22-4 18-22' stroke='#E9A65A' stroke-width='3' fill='none' stroke-linecap='round'/><circle cx='84' cy='62' r='5' fill='#D98F44'/><ellipse cx='45' cy='84' rx='22' ry='18' fill='#F6D38A'/><ellipse cx='34' cy='96' rx='8' ry='4' fill='#F0C673'/><ellipse cx='56' cy='96' rx='8' ry='4' fill='#F0C673'/><circle cx='45' cy='40' r='32' fill='#E9A65A' stroke='#D98F44' stroke-width='8' stroke-dasharray='7 5'/><circle cx='22' cy='22' r='7' fill='#F6D38A'/><circle cx='68' cy='22' r='7' fill='#F6D38A'/><circle cx='45' cy='42' r='24' fill='#F6D38A'/><circle cx='36' cy='40' r='2.6' fill='#4A3A30'/><circle cx='54' cy='40' r='2.6' fill='#4A3A30'/><ellipse cx='45' cy='50' rx='9' ry='6' fill='#FBF0D8'/><ellipse cx='45' cy='47' rx='3.4' ry='2.4' fill='#D98F7A'/><path d='M45 49v3M40 53q5 4 10 0' stroke='#4A3A30' fill='none' stroke-width='1.4' stroke-linecap='round'/><circle cx='30' cy='50' r='4' fill='#F4A9A0' opacity='.7'/><circle cx='60' cy='50' r='4' fill='#F4A9A0' opacity='.7'/></symbol>
+<symbol id='ele' viewBox='0 0 130 110'><rect x='38' y='76' width='14' height='30' rx='7' fill='#A3B6CE'/><rect x='72' y='76' width='14' height='30' rx='7' fill='#A3B6CE'/><ellipse cx='62' cy='64' rx='38' ry='30' fill='#B6C7DD'/><ellipse cx='68' cy='50' rx='17' ry='22' fill='#9FB4CF'/><circle cx='86' cy='50' r='24' fill='#B6C7DD'/><path d='M104 60q14 6 14-14V38' stroke='#B6C7DD' stroke-width='10' fill='none' stroke-linecap='round'/><path d='M118 33V22' stroke='#9A8B7E' stroke-width='1.2'/><ellipse cx='118' cy='12' rx='9' ry='10' fill='#F4A9B8'/><circle cx='80' cy='47' r='2.4' fill='#4A3A30'/><circle cx='94' cy='47' r='2.4' fill='#4A3A30'/><circle cx='76' cy='57' r='4' fill='#F4A9A0' opacity='.7'/><circle cx='98' cy='57' r='4' fill='#F4A9A0' opacity='.7'/></symbol>
+<symbol id='bun' viewBox='0 0 60 70'><g fill='#F3E9DC' stroke='#D9C6B5' stroke-width='1.2'><ellipse cx='22' cy='16' rx='6' ry='15'/><ellipse cx='38' cy='16' rx='6' ry='15'/><circle cx='51' cy='60' r='5'/><ellipse cx='30' cy='56' rx='20' ry='14'/><circle cx='30' cy='38' r='17'/></g><ellipse cx='22' cy='18' rx='2.8' ry='10' fill='#E9B5A5'/><ellipse cx='38' cy='18' rx='2.8' ry='10' fill='#E9B5A5'/><circle cx='24' cy='36' r='2' fill='#4A3A30'/><circle cx='36' cy='36' r='2' fill='#4A3A30'/><ellipse cx='30' cy='42' rx='2.2' ry='1.6' fill='#E9A5A0'/><circle cx='20' cy='42' r='3.4' fill='#E9B5A5' opacity='.6'/><circle cx='40' cy='42' r='3.4' fill='#E9B5A5' opacity='.6'/></symbol>
+<symbol id='trail' viewBox='0 0 110 40'><path d='M2 30q10-14 22-6t22-8' stroke='#B9A99A' fill='none' stroke-width='1.6' stroke-dasharray='2 4' stroke-linecap='round'/><g transform='translate(54 2)'><ellipse cx='28' cy='22' rx='14' ry='11' fill='#8FA6C6'/><circle cx='38' cy='14' r='8' fill='#8FA6C6'/><path d='M16 20q-6-6-12-2l6 6z' fill='#7F96B8'/><ellipse cx='26' cy='22' rx='7' ry='5' fill='#7F96B8'/><path d='M45 14l6 2-6 2z' fill='#F6C85F'/><circle cx='41' cy='12' r='1.8' fill='#4A3A30'/><circle cx='36' cy='19' r='2.6' fill='#F4A9A0' opacity='.6'/></g></symbol>
+<symbol id='daisy' viewBox='0 0 24 30'><path d='M12 12v18' stroke='#9BC58A' stroke-width='2'/><path d='M12 27q-8-2-8-8 8 0 8 8zM12 27q8-2 8-8-8 0-8 8z' fill='#9BC58A'/><g fill='#fff' stroke='#DCE6F2' stroke-width='.8'><circle cx='12' cy='4' r='3.6'/><circle cx='18' cy='8' r='3.6'/><circle cx='16' cy='14' r='3.6'/><circle cx='8' cy='14' r='3.6'/><circle cx='6' cy='8' r='3.6'/></g><circle cx='12' cy='9.5' r='2.8' fill='#F6C85F'/></symbol>
+<symbol id='tuft' viewBox='0 0 34 22'><path d='M17 22q-4-10-12-12 6 2 10 8 0-10 6-16-2 10 0 16 4-6 12-8-8 4-10 12z' fill='#9BC58A'/></symbol>
+</defs></svg>
+<div id="balloons" aria-hidden="true"></div>
+<div id="ambient" aria-hidden="true"></div>
+<div id="bee" aria-hidden="true">
+  <svg width="34" height="30" viewBox="0 0 34 30"><ellipse cx="12" cy="9" rx="7" ry="5" fill="#fff" opacity=".85" stroke="#9DB6D8"/><ellipse cx="21" cy="8" rx="7" ry="5" fill="#fff" opacity=".85" stroke="#9DB6D8"/><ellipse cx="17" cy="19" rx="11" ry="8" fill="#E4B85A"/><rect x="13" y="12" width="3.5" height="14" fill="#4A3A30"/><rect x="20" y="12.5" width="3.5" height="13" fill="#4A3A30"/><circle cx="6.5" cy="19" r="1.4" fill="#4A3A30"/></svg>
+</div>
+
+<header class="intro">
+  <div>
+    <p class="script">Peyman and Elham are going to have</p>
+    <button class="env" id="env" aria-label="Open your invitation">
+      <span class="back"></span><span class="letter">A Baby Boy</span><span class="front"></span><span class="flap"></span><span class="seal" aria-hidden="true">♥</span>
+    </button>
+    <p class="hint" id="hint">Tap the envelope to open</p>
+  </div>
+<div class='sky' id='sky-intro' aria-hidden='true'></div>
+<div class="critter bear" aria-hidden="true"><svg width='88' viewBox='0 0 100 110'><circle cx='26' cy='22' r='13' fill='#C8A37F'/><circle cx='74' cy='22' r='13' fill='#C8A37F'/><circle cx='26' cy='22' r='6' fill='#E8D3B9'/><circle cx='74' cy='22' r='6' fill='#E8D3B9'/><ellipse cx='50' cy='92' rx='30' ry='24' fill='#C8A37F'/><ellipse cx='50' cy='96' rx='17' ry='15' fill='#E8D3B9'/><circle cx='50' cy='44' r='30' fill='#C8A37F'/><ellipse cx='50' cy='54' rx='13' ry='10' fill='#E8D3B9'/><circle cx='40' cy='40' r='3' fill='#4A3A30'/><circle cx='60' cy='40' r='3' fill='#4A3A30'/><ellipse cx='50' cy='50' rx='4.5' ry='3.2' fill='#4A3A30'/><path d='M50 53v3M44 58q6 5 12 0' stroke='#4A3A30' fill='none' stroke-width='1.6' stroke-linecap='round'/><circle cx='33' cy='52' r='4' fill='#E9B5A5' opacity='.7'/><circle cx='67' cy='52' r='4' fill='#E9B5A5' opacity='.7'/></svg></div>
+<div class="critter bunny" aria-hidden="true"><svg width='80' viewBox='0 0 100 120'><ellipse cx='34' cy='28' rx='10' ry='26' fill='#F3E9DC' stroke='#D9C6B5' stroke-width='1.5'/><ellipse cx='66' cy='28' rx='10' ry='26' fill='#F3E9DC' stroke='#D9C6B5' stroke-width='1.5'/><ellipse cx='34' cy='30' rx='4.5' ry='17' fill='#E9B5A5'/><ellipse cx='66' cy='30' rx='4.5' ry='17' fill='#E9B5A5'/><ellipse cx='50' cy='106' rx='28' ry='24' fill='#F3E9DC' stroke='#D9C6B5' stroke-width='1.5'/><circle cx='50' cy='70' r='26' fill='#F3E9DC' stroke='#D9C6B5' stroke-width='1.5'/><circle cx='41' cy='66' r='2.8' fill='#4A3A30'/><circle cx='59' cy='66' r='2.8' fill='#4A3A30'/><ellipse cx='50' cy='75' rx='3' ry='2.2' fill='#E9A5A0'/><path d='M50 77v2.5M45 81q5 4 10 0' stroke='#4A3A30' fill='none' stroke-width='1.4' stroke-linecap='round'/><circle cx='36' cy='76' r='4' fill='#E9B5A5' opacity='.6'/><circle cx='64' cy='76' r='4' fill='#E9B5A5' opacity='.6'/></svg></div>
+</header>
+
+<main>
+  <section class="invite" id="invite">
+    <div class='sky' id='sky-invite' aria-hidden='true'></div>
+    <svg class="tree" viewBox="0 0 100 320" aria-hidden="true">
+      <path d="M38 320 L46 110 L60 110 L72 320Z" fill="var(--wood)"/>
+      <path d="M52 170 L8 128" stroke="var(--wood)" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="50" cy="60" r="42" fill="var(--leaf)"/><circle cx="26" cy="96" r="26" fill="var(--leaf-d)" opacity=".7"/><circle cx="76" cy="92" r="28" fill="var(--leaf-d)" opacity=".6"/>
+      <g class="hive"><path d="M28 128 v18" stroke="var(--wood)" stroke-width="2"/><ellipse cx="28" cy="170" rx="17" ry="24" fill="var(--honey)"/><path d="M12 160h32M11 172h34M13 184h30" stroke="#B9852E" stroke-width="2.5"/><ellipse cx="28" cy="180" rx="5" ry="6" fill="#6B4A22"/></g>
+    </svg>
+    <div class="wrap">
+      <p class="when rv" style="--d:.4s" id="dateLine"></p>
+      <p class="when rv" style="--d:.45s" id="placeLine"></p>
+      <span class="signwrap"><span class="critter bird" aria-hidden="true"><svg width='44' viewBox='0 0 50 50'><path d='M18 14q-3-8 3-9 0 5 3 7z' fill='#7F9BBE'/><path d='M10 36l-9 4 10 2z' fill='#7F9BBE'/><circle cx='25' cy='28' r='16' fill='#9DB6D8'/><ellipse cx='26' cy='35' rx='10' ry='9' fill='#F3E9DC'/><ellipse cx='17' cy='30' rx='6' ry='10' fill='#7F9BBE' transform='rotate(-15 17 30)'/><path d='M39 24l9 4-9 4z' fill='#E4B85A'/><circle cx='31' cy='22' r='2.3' fill='#4A3A30'/></svg></span><a class="sign rv" style="--d:.5s" id="maps" href="#" target="_blank" rel="noopener noreferrer">Google Maps</a></span>
+    </div>
+  </section>
+
+
+  <section class="wrap center" id="books">
+    <div class='flyer' id='flyer' aria-hidden='true'></div>
+    <div class="critter inline pop" aria-hidden="true"><svg viewBox='0 0 110 100'><rect x='40' y='74' width='7' height='22' rx='3' fill='#7A6455'/><rect x='64' y='74' width='7' height='22' rx='3' fill='#7A6455'/><g fill='#FBF3E6' stroke='#E4D5C0' stroke-width='1.5'><circle cx='32' cy='52' r='19'/><circle cx='52' cy='40' r='22'/><circle cx='74' cy='50' r='19'/><circle cx='50' cy='62' r='21'/><circle cx='70' cy='64' r='17'/></g><ellipse cx='88' cy='54' rx='14' ry='17' fill='#7A6455'/><ellipse cx='74' cy='44' rx='9' ry='4.5' fill='#7A6455' transform='rotate(25 74 44)'/><circle cx='88' cy='37' r='8' fill='#FBF3E6' stroke='#E4D5C0' stroke-width='1.5'/><circle cx='84' cy='53' r='2' fill='#FBF3E6'/><circle cx='93' cy='53' r='2' fill='#FBF3E6'/><circle cx='88' cy='62' r='2' fill='#E9A5A0'/></svg></div>
+  </section>
+
+  <section class="wrap" id="registry">
+    <div class="center"><h2 class="rv">Our registries</h2><p class="lead rv">We’re so lucky to have you all as friends and family in our lives. ❤️</p></div>
+    <div class="grid" id="registryGrid"></div>
+  </section>
+
+  <section class="wrap" id="gifts">
+    <div class="gifts pop">
+      <div class="critter hedge" aria-hidden="true"><svg width='92' viewBox='0 0 110 70'><ellipse cx='48' cy='46' rx='40' ry='28' fill='#8B6A4D' stroke='#5C432E' stroke-width='7' stroke-dasharray='3 4'/><ellipse cx='48' cy='46' rx='36' ry='24' fill='#8B6A4D'/><ellipse cx='30' cy='68' rx='8' ry='3' fill='#5C432E'/><ellipse cx='66' cy='68' rx='8' ry='3' fill='#5C432E'/><ellipse cx='88' cy='50' rx='18' ry='14' fill='#E8D3B9'/><circle cx='80' cy='34' r='6' fill='#E8D3B9'/><circle cx='95' cy='46' r='2.4' fill='#4A3A30'/><circle cx='105' cy='51' r='3.2' fill='#4A3A30'/><circle cx='88' cy='57' r='3.5' fill='#E9B5A5' opacity='.7'/></svg></div>
+      <h2>Prefer a gift card?</h2>
+      <p class="lead">Visa gift cards help us pick up whatever we need most once baby arrives. Share your name and pick an amount, and we’ll reach out to arrange it.</p>
+      <form class="gform" id="giftForm" novalidate>
+        <label class="f">Your name<input type="text" id="gName" name="name" required autocomplete="name"></label>
+        <fieldset><legend>Choose an amount</legend><div class="opts" id="gAmounts"></div></fieldset>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Send to us</button>
+        <p id="gMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+<section class='parade'><div class='row' id='parade' aria-hidden='true'></div><div class='ground'></div></section>
+<footer class="wrap">With love and a lot of hunny</footer>
+
+<script>
+/* ===========================================================
+   EDIT HERE: your details and links. An empty url shows
+   "Link coming soon". Music is not part of this site.
+   =========================================================== */
+const PARTY = {
+  <!-- dateISO: "2027-03-06T14:00:00",  -->  // year-month-dayThh:mm:ss, your local time
+  place: "11111 Columbia Street West Waterloo, ON",
+  mapsUrl: "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/dir//350%2BColumbia%2BSt%2BW,%2BWaterloo,%2BON%2BN2L%2B6P3/data%3D!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882bf6b13971aa33:0x32f04fea88c8ed4%3Fsa%3DX%26ved%3D1t:707%26ictx%3D111&ved=2ahUKEwi79fuBl86XAxU4OTQIHXmeLaAQwwV6BAghEAQ&usg=AOvVaw1nd5Y-LHtxwp5LioNiGRe5",                         // paste your Google Maps link
+};
+const REGISTRIES = [
+  { name: "Amazon",  letter: "A", url: "https://www.amazon.ca/baby-reg/elham-azimi-november-2026-waterloo/3OWIWGYX8YP11 ", blurb: "Our full list of nursery and everyday baby essentials." },
+  { name: "Walmart", letter: "W", url: "", blurb: "Diapers, bath time and practical must-haves." },
+  { name: "IKEA",    letter: "I", url: "", blurb: "Furniture, storage and soft things for the nursery." }
+];
+const GIFT_FORM = {
+  endpoint: "",   // paste your form link here (e.g. a Formspree URL like https://formspree.io/f/xxxxxxxx)
+  amounts: ["$25", "$50", "$100", "Other"]
+};
+/* =========================================================== */
+
+document.documentElement.classList.add('js');
+const $=id=>document.getElementById(id);
+const mk=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e};
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const when=new Date(PARTY.dateISO);
+
+// content
+$('placeLine').textContent=PARTY.place;
+if(PARTY.mapsUrl)$('maps').href=PARTY.mapsUrl;else{$('maps').removeAttribute('href');$('maps').style.opacity=.6}
+if(!isNaN(when)){
+  $('dateLine').textContent=when.toLocaleDateString('en-CA',{weekday:'long',month:'long',day:'numeric',year:'numeric'})+' at '+when.toLocaleTimeString('en-CA',{hour:'numeric',minute:'2-digit'});
+}
+
+// envelope
+$('env').addEventListener('click',()=>{
+  const e=$('env');if(e.classList.contains('open'))return;
+  e.classList.add('open');$('hint').textContent='Scroll down to read it';
+  setTimeout(()=>$('invite').scrollIntoView({behavior:reduce?'auto':'smooth'}),1400);
+});
+
+// cards
+REGISTRIES.forEach((r,i)=>{
+  const c=mk('article','card pop');c.style.setProperty('--d',i*.12+'s');
+  c.append(mk('div','dot',r.letter),mk('h3',null,r.name),mk('p',null,r.blurb));
+  const a=mk('a','btn',r.url?'View registry':'Link coming soon');
+  if(r.url){a.href=r.url;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label','View our '+r.name+' registry')}
+  else{a.className='btn off';a.setAttribute('aria-disabled','true')}
+  c.append(a);$('registryGrid').append(c);
+});
+// gift card request: collects name + amount and sends it to you (no card links, no contact info on the page)
+$('gAmounts').innerHTML=GIFT_FORM.amounts.map((a,i)=>`<label><input type='radio' name='amount' value='${a}' ${i===0?'checked':''}><span>${a}</span></label>`).join('');
+$('giftForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const m=$('gMsg'),name=$('gName').value.trim(),pick=document.querySelector('input[name=amount]:checked'),amt=pick?pick.value:'';
+  if(!name){m.textContent='Please add your name.';return}
+  if(!amt){m.textContent='Please choose an amount.';return}
+  if(e.target.querySelector('.hp').value)return;
+  if(!GIFT_FORM.endpoint){m.textContent='Thank you! (Host: add your form link to GIFT_FORM.endpoint to receive these.)';return}
+  m.textContent='Sending...';
+  try{
+    const r=await fetch(GIFT_FORM.endpoint,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:name,amount:amt,message:name+' would like to give a '+amt+' Visa gift card.'})});
+    if(!r.ok)throw new Error('bad response');
+    e.target.reset();m.textContent='Thank you, '+name+'! We\u2019ll reach out to you soon to arrange it.';
+  }catch(err){m.textContent='Sorry, that did not go through. Please text us your name and amount instead.'}
+});
+
+// sticker animals: sky decor, bird that flies as you scroll, animal parade
+const VB={star:'0 0 30 30',cloud:'0 0 100 60',sun:'0 0 80 80',hba:'0 0 80 130',hbb:'0 0 80 130',giraffe:'0 0 90 150',hippo:'0 0 120 80',croc:'0 0 130 62',lion:'0 0 90 100',ele:'0 0 130 110',bun:'0 0 60 70',daisy:'0 0 24 30',tuft:'0 0 34 22',trail:'0 0 110 40'};
+const ico=(id,w,cls='',st='')=>`<svg class='deco ${cls}' width='${w}' viewBox='${VB[id]}' aria-hidden='true' style='${st}'><use href='#${id}'/></svg>`;
+const SKY={
+ 'sky-intro':[['cloud',100,'drift','left:3%;top:5%'],['cloud',80,'drift','right:4%;top:22%;animation-delay:1s'],['star',22,'tw','left:26%;top:16%'],['star',16,'tw','right:24%;top:10%;animation-delay:.8s'],['star',18,'tw','left:8%;top:40%;animation-delay:1.4s'],['star',14,'tw','right:12%;top:50%;animation-delay:.4s']],
+ 'sky-invite':[['sun',70,'spin hm','left:7%;top:64%'],['hba',62,'drift','right:3%;top:6px'],['hbb',56,'drift hm','right:5%;top:46%;animation-delay:1.5s'],['cloud',84,'drift hm','right:20%;top:3%;animation-delay:.6s'],['star',18,'tw','left:30%;top:60px'],['star',14,'tw hm','left:12%;top:60%;animation-delay:1s'],['star',20,'tw','right:30%;top:40%;animation-delay:.5s']]
+};
+Object.entries(SKY).forEach(([id,list])=>{$(id).innerHTML=list.map(d=>ico(d[0],d[1],d[2],d[3])).join('')});
+$('flyer').innerHTML=ico('trail',112);
+const PA=[['giraffe',70],['bun',46],['hippo',100],['daisy',22],['croc',116],['tuft',34],['lion',80],['daisy',22],['ele',106]];
+$('parade').innerHTML=PA.map((p,i)=>`<div class='critter pa pop' style='--d:${i*.1}s'>${ico(p[0],p[1])}</div>`).join('');
+
+// ambient motion: drifting clouds, rising hearts and bubbles, falling leaves, butterflies, bees, twinkling stars
+(function(){
+  const A=$('ambient'),R=(a,b)=>a+Math.random()*(b-a),beeSVG=document.querySelector('#bee svg').outerHTML;
+  let h='';
+  for(let i=0;i<5;i++)h+=`<div class='cld' style='top:${R(4,70)}%;opacity:${R(.45,.8)};animation-duration:${R(70,130)}s;animation-delay:-${R(0,100)}s'>${ico('cloud',R(70,120))}</div>`;
+  for(let i=0;i<14;i++)h+=`<svg class='deco tw' width='${R(10,22)}' viewBox='${VB.star}' style='left:${R(1,98)}%;top:${R(2,95)}%;animation-delay:-${R(0,3)}s;animation-duration:${R(1.8,3.6)}s'><use href='#star'/></svg>`;
+  const HC=['#E9A5A0','#F6D27A','#ffffff','#CFE8C6'];
+  for(let i=0;i<16;i++){
+    const sz=R(10,24),base=`left:${R(2,96)}%;animation-duration:${R(14,28)}s;animation-delay:-${R(0,28)}s;--dx:${R(-60,60)}px`;
+    h+=i%2?`<span class='rise' style='${base};width:${sz}px;height:${sz}px;border-radius:50%;border:1.5px solid rgba(255,255,255,.8);background:rgba(255,255,255,.22)'></span>`
+          :`<span class='rise' style='${base};font-size:${sz+4}px;color:${HC[i%HC.length]}'>&#9829;</span>`;
+  }
+  const LC=['#8DB36E','#5C8A47','#A9CE9C'];
+  for(let i=0;i<9;i++)h+=`<span class='leaf' style='left:${R(0,98)}%;animation-duration:${R(16,30)}s;animation-delay:-${R(0,30)}s;--dx:${R(-90,90)}px;--rot:${R(-540,540)}deg'><svg width='${R(16,26)}' viewBox='0 0 24 24'><path d='M3 21C3 9 11 3 21 3c0 10-6 18-18 18z' fill='${LC[i%3]}'/><path d='M3 21L15 9' stroke='#3E6B45' stroke-width='1.3' fill='none'/></svg></span>`;
+  const path=()=>[0,1,2,3].map(k=>`--x${k}:${R(0,88)}vw;--y${k}:${R(8,82)}vh`).join(';');
+  [['#F6D27A','#F4A9A0'],['#9FB4E8','#CFE6C4'],['#F4B6C2','#F6D27A'],['#fff','#BFE5B5']].forEach(c=>{
+    h+=`<div class='fly' style='${path()};animation-duration:${R(16,26)}s;animation-delay:-${R(0,12)}s'><svg width='34' viewBox='0 0 40 30'><g class='wl'><ellipse cx='11' cy='10' rx='10' ry='8' fill='${c[0]}'/><ellipse cx='12' cy='21' rx='7' ry='6' fill='${c[1]}'/></g><g class='wr'><ellipse cx='29' cy='10' rx='10' ry='8' fill='${c[0]}'/><ellipse cx='28' cy='21' rx='7' ry='6' fill='${c[1]}'/></g><rect x='18.8' y='6' width='2.4' height='20' rx='1.2' fill='#4A3A30'/></svg></div>`;
+  });
+  for(let i=0;i<2;i++)h+=`<div class='fly' style='${path()};animation-duration:${R(11,18)}s;animation-delay:-${R(0,10)}s'>${beeSVG}</div>`;
+  A.innerHTML=h;
+})();
+
+// tap an animal friend
+document.querySelectorAll('.critter').forEach(c=>c.addEventListener('click',()=>{
+  c.classList.remove('hop');void c.offsetWidth;c.classList.add('hop');
+  const h=mk('span','heart','♥');c.append(h);setTimeout(()=>h.remove(),1000);
+}));
+
+// scroll reveals
+const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.2}):null;
+document.querySelectorAll('.rv,.pop').forEach(el=>io?io.observe(el):el.classList.add('in'));
+
+// balloons that drift upward as you scroll
+const COL=['#9FC5EE','#F4B6C8','#F6D27A','#BFE5B5','#C9B8F0','#8FD0D8','#F4A9C0','#A9D49B'];
+const XS=[3,92,10,86,5,94,13,88,18,80];
+const bal=XS.map((x,i)=>{
+  const s=34+(i%3)*10,el=mk('div','b'),c=COL[i%COL.length];
+  el.innerHTML=`<svg viewBox="0 0 40 80" width="${s}" height="${s*2}"><ellipse cx="20" cy="18" rx="15" ry="18" fill="${c}"/><path d="M17 36l3 4 3-4z" fill="${c}"/><path d="M20 40q-6 14 0 26t0 14" stroke="#8a7a6a" fill="none" stroke-width="1" opacity=".6"/><ellipse cx="14" cy="11" rx="4" ry="6" fill="#fff" opacity=".4"/></svg>`;
+  $('balloons').append(el);
+  return {el,x,base:i/XS.length,sp:.18+(i%3)*.09,ph:i*1.3};
+});
+let ticking=false;
+function frame(){
+  ticking=false;
+  const y=scrollY,H=innerHeight+300,W=innerWidth;
+  const max=Math.max(1,document.documentElement.scrollHeight-innerHeight),prog=Math.min(1,y/max);
+  bal.forEach(b=>{
+    const ty=(((b.base*H-(reduce?0:y*b.sp))%H)+H)%H-150;
+    b.el.style.transform=`translate(${W*b.x/100+(reduce?0:Math.sin(y/140+b.ph)*10)}px,${ty}px)`;
+  });
+  const fl=$('flyer');
+  if(fl){const r=fl.parentElement.getBoundingClientRect(),t=Math.min(1,Math.max(0,(innerHeight-r.top)/(innerHeight+r.height)));fl.style.transform=`translate(${-r.left-120+t*(W+140)}px,${reduce?0:Math.sin(t*9)*14}px)`}
+  const bee=$('bee');
+  bee.style.transform=`translate(${reduce?0:Math.sin(y/70)*-14}px,${20+prog*(innerHeight-90)}px) rotate(${reduce?0:Math.sin(y/90)*12}deg)`;
+}
+function req(){if(!ticking){ticking=true;requestAnimationFrame(frame)}}
+addEventListener('scroll',req,{passive:true});addEventListener('resize',req);frame();
+</script>
+</body>
+</html>
